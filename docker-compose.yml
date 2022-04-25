@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  node:
+    container_name: my-app
+    build:      
+      target: node
+      dockerfile: ./dockerfile    
+    volumes:
+      - ./src:/src
+    networks:
+      - my-app
+    ports:
+      - 4000:80
+      - 9229:9229 
+networks:
+  my-app:
+    driver: bridge
