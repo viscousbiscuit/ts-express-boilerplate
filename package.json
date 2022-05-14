@@ -4,7 +4,7 @@
   "description": "Typescript & Jest Boilerplate For Node Apps.",
   "type": "module",
   "scripts": {
-    "start": "node build/src/main.js",
+    "start": "npm run dev",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",

@@ -1,18 +1,10 @@
 import 'dotenv/config'
 import express from 'express';
-
+import home from './api/routes/home.js';
 
 const app = express();
 const port = process.env.PORT
 
+app.use(home);
 
-app.get('/', (req, res) => {
-
-  let myThing = "";
-  res.send('xx ' + myThing);
-
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(port);
