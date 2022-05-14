@@ -10,5 +10,6 @@ By default `npm test` will run `jest --coverage`.
 
 # Working locally with Docker
 
-`npm run-script dev` will use node-ts using the `--experimental-specifier-resolution` flag which enables the use of es modules. It will also enable the use of a debugger on port `9229` using the following switch `--inspect=0.0.0.0:9229`. Port `9229` is also enabled within the docker compose file.
+`npm start' or `npm run-script dev` will use node-ts using the `--experimental-specifier-resolution` flag which enables the use of es modules. It will also enable the use of a debugger on port `9229` using the following switch `--inspect=0.0.0.0:9229`. Port `9229` is also enabled within the docker compose file.
 
+Configure the .env file to specific which port should be used, port 4000 is set by default.
